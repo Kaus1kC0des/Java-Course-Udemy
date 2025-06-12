@@ -42,7 +42,7 @@ public class Car {
 		if(this.make == null || this.model == null || this.doors == 0){
 			return "This car is not fully initialised, or has invalid values. Check and try again!";
 		}else{
-			return this.doors + " - Doors " + this.make + " " + this.model + " " + (this.convertible == true ? "Convertible":"Not Convertible");
+			return this.doors + " - Doors " + this.make + " " + this.model + " " + (this.convertible ? "Convertible":"Not Convertible");
 		}
 	}
 }
