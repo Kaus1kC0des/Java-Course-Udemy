@@ -1,48 +1,30 @@
 package objectOrientedProgramming;
 
-public class Car {
-	private String make;
-	private String model;
-	private int doors;
-	private boolean convertible;
+public class Car extends Vehicle {
 
-	public void setMake(String make){
-		this.make = make;
-	}
+    private String brand;
+    private String licensePlate;
 
-	public void setModel(String model) {
-		this.model = model;
-	}
+    public Car(String brand, String licensePlate) {
+        this.brand = brand;
+        this.licensePlate = licensePlate;
+        super.name = "Error";
 
-	public void setDoors(int doors) {
-		this.doors = doors;
-	}
+    }
 
-	public void setConvertible(boolean convertible) {
-		this.convertible = convertible;
-	}
+    public String getBrand() {
+        return brand;
+    }
 
-	public String getMake(){
-		return this.make;
-	}
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-	public String getModel() {
-		return model;
-	}
+    public String getLicensePlate() {
+        return licensePlate;
+    }
 
-	public int getDoors() {
-		return doors;
-	}
-
-	public boolean isConvertible() {
-		return convertible;
-	}
-
-	public String getDescription(){
-		if(this.make == null || this.model == null || this.doors == 0){
-			return "This car is not fully initialised, or has invalid values. Check and try again!";
-		}else{
-			return this.doors + " - Doors " + this.make + " " + this.model + " " + (this.convertible ? "Convertible":"Not Convertible");
-		}
-	}
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
 }
