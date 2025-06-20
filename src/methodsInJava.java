@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class methodsInJava {
     public static void main(String[] args) {
         /*
@@ -27,6 +25,7 @@ public class methodsInJava {
         double totalInches = (double)(feet * 12 + inches);
         return convertToCentimeters(totalInches);
     }
+
     public static String getDurationString(int seconds){
         int hours = seconds / 3600;
         int minutes = (seconds % 3600) / 60;
